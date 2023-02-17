@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/015f5b11e5.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"
+        integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Coffezin</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container-nav-logo">
+                <h1 class="logo-text">Coffe<b>zin</b></h1>
+            </div>
+            <ul class="navList">
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#benefits">Benefícios</a></li>
+                <li><a href="#malefits">Malefícios</a></li>
+                <li class="ocult-responsive"><a href="#types">Tipos</a></li>
+                <li class="ocult-responsive"><a href="#curiosities">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-main-entry">
+        <div class="container container-nb">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-entry">
+                        <h1 class="entry-title">Café é bom demais</h1>
+                        <p class="entry-subtitle">Saiba porque café é bom demais!</p>
+                        <p class="entry-subtitle2">E algumas coisas não muito boas...</p>
+                        <button class="entry-button" data-bs-toggle="modal"
+                            data-bs-target="#cat_coffe_animation">Preparar meu
+                            café</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container-fluid container-about" id="sobre">
+            <i class="fa-solid fa-chevron-down arrowDown"></i>
+            <div class="container">
+                <div class="row container-content-about">
+                    <div class="col-md-6 col-12">
+                        <img src="./img/xicara-cafe.png" class="img-fluid about-img">
+                    </div>
+                    <div class="col-md-6 col-12 container-content-about-text">
+                        <h1 class="about-title">Descubra o mundo fascinante do café!</h1>
+                        <p class="about-body">O café é uma bebida apreciada em todo o mundo e é conhecido por sua
+                            capacidade de fornecer
+                            energia e melhorar o foco e a concentração. É cultivado em países de clima tropical, como
+                            Brasil, Colômbia, Etiópia e Vietnã, e é produzido a partir dos grãos torrados da planta de
+                            café.</p>
+                        <button class="about-button" data-bs-toggle="modal" data-bs-target="#read-more">Leia
+                            mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid container-benefits" id="benefits">
+            <h1>Benefícios</h1>
+            <div class="container-content-benefit">
+                <div class="content-benefit-item" data-bs-toggle="modal" data-bs-target="#benefit-mental-performance">
+                    <div class="container-icon-benefit">
+                        <i class="fa-solid fa-brain benefit-item-icon"></i>
+                    </div>
+                    <div class="container-text-benefit">
+                        <p class="benefit-item-title">
+                            Melhora o desempenho mental
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-benefit-item" data-bs-toggle="modal" data-bs-target="#benefit-increase-energy">
+                    <div class=" container-icon-benefit">
+                        <i class="fa-solid fa-bolt benefit-item-icon"></i>
+                    </div>
+                    <div class="container-text-benefit">
+                        <p class="benefit-item-title">
+                            Aumenta a energia
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="content-benefit-item" data-bs-toggle="modal" data-bs-target="#benefit-prevent-disease">
+                    <div class=" container-icon-benefit"><i class="fa-solid fa-notes-medical benefit-item-icon"></i>
+                    </div>
+                    <div class="container-text-benefit">
+                        <p class="benefit-item-title">Previne doenças</p>
+                    </div>
+
+                </div>
+
+                <div class="content-benefit-item" data-bs-toggle="modal" data-bs-target="#benefit-heart-health">
+                    <div class="container-icon-benefit"><i class="fa-solid fa-heart benefit-item-icon"></i></div>
+                    <div class="container-text-benefit">
+                        <p class="benefit-item-title">Melhora a saúde do coração</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container-ocult-text">
+                <p>Clique nas imagens para saber mais</p>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="cat_coffe_animation" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content container-cat-coffe-animation">
+                    <div class="modal-body container-body-cat-coffe-animation">
+                        <div>
+                            <div class="cat_coffe_animation"></div>
+                        </div>
+                        <div>
+                            Que maravilha, o café já está pronto, só esperar ele acabar!
+                        </div>
+                    </div>
+                    <div class="modal-footer" data-bs-dismiss="modal">
+                        <p class="leave-with-the-cat">Vou deixar com ele mesmo, tão fofinho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="benefit-mental-performance" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Melhora o desempenho mental</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>O café contém cafeína, que é uma substância estimulante que ajuda a melhorar o foco, a
+                            concentração e a memória.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="benefit-increase-energy" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Aumenta a energia</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>A cafeína presente no café aumenta a liberação de adrenalina no corpo, ajudando a aumentar a
+                            energia e a alerta (referente à sensação de estar mais acordado, atento e focado).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="benefit-prevent-disease" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Previne doenças</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>O café é rico em antioxidantes, que ajudam a proteger o corpo contra o dano celular e podem
+                            ajudar a prevenir doenças como o diabetes, doenças cardíacas e derrames.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="benefit-heart-health" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Melhora a saúde do coração</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>O café pode ajudar a manter a saúde do coração, pois contém compostos que ajudam a reduzir a
+                            pressão arterial e a proteger contra doenças cardíacas.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="read-more" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable  modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Origem e Cultivo do Café: Descubra mais sobre a bebida mais amada
+                            do mundo</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            O café é uma bebida que tem uma história rica e fascinante. Sua origem remonta a cerca de
+                            1000 anos atrás, quando ele era consumido na região de Kaffa, na Etiópia, como um chá feito
+                            a partir das folhas e dos frutos da planta do café.
+                        </p>
+                        <p>
+                            O café é produzido a partir dos grãos torrados da planta de café, que são colhidos e
+                            processados para remover a casca e a polpa. Em seguida, os grãos são torrados em diferentes
+                            graus, para produzir diferentes tipos de café, desde os mais suaves até os mais intensos.
+                        </p>
+                        <p>
+                            O café é apreciado em todo o mundo por seu sabor e aroma, além de seus efeitos estimulantes.
+                            A cafeína presente no café é responsável por seus efeitos energizantes e estimulantes, que
+                            ajudam a melhorar o foco e a concentração. Além disso, o café é uma bebida versátil, que
+                            pode ser preparada de muitas formas diferentes, desde um simples café preto até bebidas mais
+                            elaboradas, como lattes e cappuccinos.
+                        </p>
+                        <p>
+                            Devido à sua popularidade e ao seu sabor único, o café se tornou uma parte importante da
+                            cultura e da culinária em muitos países ao redor do mundo, e continua a ser uma bebida
+                            apreciada por muitas pessoas em todo o mundo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid container-malefits" id="malefits">
+            <div class="container">
+                <div class="row container-content-malefetis">
+                    <div class="col-md-6 col-12 container-text-content-malefits">
+                        <h1 class="malefit-title">Malefícios</h1>
+                        <p class="warning-abote-malefit-title">Geralmente causados pelo consumo excessivo</p>
+                        <p class="malefit-subtitle">Insônia</p>
+                        <p>O consumo excessivo de café pode causar insônia, ou seja, dificuldade para dormir e para
+                            manter o sono.</p>
+                        <p class="malefit-subtitle">Ansiedade</p>
+                        <p>A cafeína presente no café pode aumentar a ansiedade e causar sintomas como palpitações,
+                            sudorese e tensão muscular.</p>
+                        <p class="malefit-subtitle">Dependência</p>
+                        <p>A cafeína presente no café pode levar a uma dependência, e as pessoas que param de
+                            consumir
+                            cafeína podem experimentar sintomas de abstinência, como fadiga, irritabilidade e dores
+                            de
+                            cabeça.</p>
+                        <p class="malefit-subtitle">Desidratação</p>
+                        <p>O café pode desidratar o corpo, pois a cafeína pode aumentar a produção de urina.</p>
+                    </div>
+                    <div class="col-md-6 col-12 container-malefit-image">
+                        <img src="./img/—Pngtree—flying cup of coffee with_5057949.png" class="img-fluid malefit-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid container-types" id="types">
+            <div class="container container-content-types">
+                <h1 class="type-title">Alguns tipos</h1>
+                <div class="row container-types-item inverse">
+                    <div class="col-md-6 col-12 container-content-type-item">
+                        <p class="type-item-description">É uma bebida forte e concentrada feita com grãos
+                            finamente
+                            moídos e água quente pressionada sob alta pressão através de um filtro. É a base para muitas
+                            outras bebidas de café.</p>
+                    </div>
+                    <div class="col-md-6 col-12 container-content-type-item">
+                        <p class="type-item-title">Expresso</p>
+                    </div>
+                </div>
+                <div class="row container-types-item">
+                    <div class="col-md-6 col-12 container-content-type-item">
+                        <p class="type-item-title">Cappuccino</p>
+                    </div>
+                    <div class="col-md-6 col-12 container-content-type-item">
+                        <p class="type-item-description">É uma bebida de café italiana feita com um terço
+                            de café
+                            expresso, um terço de leite vaporizado e um terço de espuma de leite.</p>
+                    </div>
+                </div>
+                <div class="row container-types-item inverse">
+                    <div class="col-md-6 col-12 container-content-type-item">
+                        <p class="type-item-description">É uma bebida de café popular feita com café expresso,
+                            leite
+                            vaporizado e uma pequena quantidade de espuma de leite. Pode ser servido com sabor
+                            adicional,
+                            como caramelo, baunilha ou canela.</p>
+                    </div>
+                    <div class="col-md-6 col-12 container-content-type-item">
+                        <p class="type-item-title">Latte</p>
+                    </div>
+                </div>
+                <div class="row container-types-item last">
+                    <div class="col-md-6 col-12 container-content-type-item">
+                        <p class="type-item-title">Mocha</p>
+                    </div>
+                    <div class="col-md-6 col-12 container-content-type-item">
+                        <p class="type-item-description">É uma bebida de café que combina café expresso,
+                            leite
+                            vaporizado, chocolate e chantilly. Pode ser servido quente ou frio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid container-curiosities" id="curiosities">
+            <div class="container container-content-curiosities">
+                <h1>Curiosidades</h1>
+                <p>1. O café é a segunda commodity mais negociada no mundo, atrás apenas do petróleo.</p>
+
+                <p>2. A palavra "café" tem origem árabe, e significa "vinho do feijão".</p>
+
+                <p>3. O café é um dos principais produtos de exportação do Brasil, e o país é o maior produtor mundial
+                    de
+                    café.</p>
+
+                <p>4. A lenda da descoberta do café atribui a descoberta à Kaldi, um pastor etíope que notou que suas
+                    cabras
+                    ficavam mais animadas depois de comer as folhas de um arbusto em particular. Ele experimentou as
+                    folhas
+                    e sentiu a mesma energia, e assim nasceu a tradição do café.</p>
+
+                <p>5. A cafeína é um estimulante natural encontrado no café e em outras bebidas, como chá e
+                    refrigerantes.
+                    Ela
+                    afeta o sistema nervoso central, aumentando a atenção, a energia e o estado de alerta.</p>
+
+                <p>6. O café é rico em antioxidantes, que ajudam a combater o envelhecimento e a prevenir doenças
+                    crônicas.
+                </p>
+
+                <p>7. A torrefação do café pode afetar significativamente seu sabor e aroma. Existem diferentes graus de
+                    torrefação, que vão desde o mais leve até o mais escuro, e cada um produz um sabor diferente.</p>
+
+                <p>8. O café é frequentemente associado ao hábito de fumar, e muitos cafés costumavam ter cinzeiros em
+                    todas
+                    as mesas. Hoje em dia, no entanto, a maioria dos estabelecimentos proíbe o fumo em ambientes
+                    fechados.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="https://www.linkedin.com/in/daniel-pedro-837b80218/" target="_blank">
+                <p>Desenvolvido por um amante de café ☕</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
