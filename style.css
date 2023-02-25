@@ -408,6 +408,13 @@ nav.scrolled_screen{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.informations_alert{
+    font-size: 12px;
+    opacity: 0.7;
+    text-align: center;
 }
 
 .footer-container p{
