@@ -18,3 +18,14 @@ let animation_object = bodymovin.loadAnimation({
     autoLoadSegments: false,
     path: "https://assets5.lottiefiles.com/packages/lf20_xkbhgbld.json"
 })
+
+const responsive_button = () => {
+    const mobile_menu = document.querySelector(".mobile-menu");
+    const nav_list = document.querySelector(".navList");
+
+    mobile_menu.addEventListener("click", () => {
+        nav_list.classList.toggle("active")
+    })
+}
+
+responsive_button()
