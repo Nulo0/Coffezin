@@ -612,3 +612,13 @@ nav.scrolled_screen {
     }
 }
 
+@keyframes nav_link_fade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

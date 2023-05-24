@@ -22,10 +22,17 @@ let animation_object = bodymovin.loadAnimation({
 const responsive_button = () => {
     const mobile_menu = document.querySelector(".mobile-menu");
     const nav_list = document.querySelector(".navList");
+    const nav_list_li = document.querySelectorAll(".navList li");
 
     mobile_menu.addEventListener("click", () => {
         nav_list.classList.toggle("active")
     })
+
+    nav_list_li.forEach((link) => {
+        link.addEventListener("click", () => {
+            nav_list.classList.toggle("active")
+        })
+    })
 }
 
-responsive_button()
+responsive_button();
