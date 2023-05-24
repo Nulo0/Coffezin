@@ -504,6 +504,20 @@ nav.scrolled_screen {
     opacity: 0.5;
 }
 
+.close_menu {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    z-index: 1;
+}
+
+.is_close {
+    display: none;
+}
 
 
 @media (max-width: 768px) {
