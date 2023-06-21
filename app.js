@@ -24,23 +24,28 @@ const responsive_button = () => {
     const nav_list = document.querySelector(".navList");
     const nav_list_li = document.querySelectorAll(".navList li");
     const background_screen = document.querySelector('.close_menu');
+    const computedStyle_mobile_menu = getComputedStyle(mobile_menu);
 
-    mobile_menu.addEventListener("click", () => {
-        nav_list.classList.toggle("active")
-        background_screen.classList.toggle('is_close');
-    })
-
-    background_screen.addEventListener("click", () =>{
-        nav_list.classList.toggle("active");
-        background_screen.classList.toggle('is_close');
-    })
-
-    nav_list_li.forEach((link) => {
-        link.addEventListener("click", () => {
-            nav_list.classList.toggle("active");
+    if (computedStyle_mobile_menu.display == "block") {
+        mobile_menu.addEventListener("click", () => {
+            nav_list.classList.toggle("active")
             background_screen.classList.toggle('is_close');
         })
-    })
+
+        if (computedStyle_mobile_menu.display == "block") {
+            background_screen.addEventListener("click", () => {
+                nav_list.classList.toggle("active");
+                background_screen.classList.toggle('is_close');
+            })
+        }
+
+        nav_list_li.forEach((link) => {
+            link.addEventListener("click", () => {
+                nav_list.classList.toggle("active");
+                background_screen.classList.toggle('is_close');
+            })
+        })
+    }
 }
 
 responsive_button();
